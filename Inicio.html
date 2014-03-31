@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang=pt-BR>
+	<head>
+		<meta charset='UTF-8'>
+		<meta name="author" content="rener,fernando,daniela,wellington">
+        <link rel="stylesheet" type="text/css" media="screen" href="css/demo_table.css">
+        <link rel="stylesheet" type="text/css" href="css/clinica.css">
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+            $('#consultahj').dataTable();
+            });
+            $(document).ready(function(){
+            $('#consulta_am').dataTable();
+            });
+        </script>
+		<title>Inicio</title>
+	</head>
+	<body>
+           <div class="menu">
+		<ul>
+			<li><a href="#">INICIO</a></li>
+			<li><a href="#">Consulta</a></li>
+			<li><a href="#">Cliente</a></li>
+			<li><a href="#">Agenda</a></li>
+			<li><a href="#">Avaliação</a></li>
+			<li><a href="#">Funcionário</a></li>
+			<li><a href="#">Produto</a></li>
+			<li><a href="#">Estoque</a></li>
+			<li><a href="#">Relatório financeiro</a></li>
+		</ul>
+		</div>
+        <div class="content">
+		<h2>Início</h2>
+            <table class="display" id="consultahj">
+                <caption><h3>Hoje</h3></caption>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Telefone</th>
+                        <th>Horário</th>
+                        <th>Confirmação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Rodolfo</td>
+                        <td>Rua tal</td>
+                        <td>SBC</td>
+                        <td>Fem</td>
+                    </tr>
+            </table>
+            <table class="display" id="consulta_am">
+                <caption><h3>Amanhã</h3></caption>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Telefone</th>
+                        <th>Horário</th>
+                        <th>Confirmação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Rodolfo</td>
+                        <td>Rua tal</td>
+                        <td>SBC</td>
+                        <td>Fem</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+	</body>
+</html>
